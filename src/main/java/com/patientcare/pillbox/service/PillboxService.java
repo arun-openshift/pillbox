@@ -1,6 +1,7 @@
 package com.patientcare.pillbox.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,6 +25,10 @@ public class PillboxService {
 	
 	public void addPillbox(Pillbox pillbox) {
 		pillboxRepo.save(pillbox);
+	}
+	
+	public Optional<Pillbox> getPillboxById(Integer id) {
+		return pillboxRepo.findById(id);
 	}
 
 }
