@@ -90,5 +90,19 @@ public class Pillbox {
 		this.time = time;
 	}
 
+	public Pillbox(Integer userid, String status, Integer consumed, Integer remaining, String frequency, String time) {
+		super();
+		this.userid = userid;
+		this.status = status;
+		this.consumed = consumed;
+		this.remaining = remaining;
+		this.frequency = frequency;
+		this.time = time;
+	}
+
+	public Pillbox() {
+		super();
+	}
+
 }
 
